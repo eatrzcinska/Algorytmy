@@ -14,24 +14,22 @@ public class Main {
         mojaTablica.wstaw(98,0);
 
         mojaTablica.wstaw(97,0);
-//
-//        //Tablica ma teraz postać: [97,98,99]
-//
-//        mojaTablica.wstaw(10,0);
-//
-//        //Tablica ma teraz postać: [97,98,10,99]
+
+//      Tablica ma teraz postać: [97,98,99]
+
+        mojaTablica.wstaw(10,2);
+
+//       Tablica ma teraz postać: [97,98,10,99]
 
 
-//        for(int i=0; i<mojaTablica.getSize(); ++i)
-//
-//        {
-//            System.out.println(""+i+" : "+mojaTablica.get(i));
-//        }
+        for(int i=0; i<mojaTablica.getSize(); ++i) {
+            System.out.println(""+i+" : "+mojaTablica.get(i));
+        }
 
-        //System.out.println(mojaTablica.szukaj(97));
+        System.out.println(mojaTablica.szukaj(97));
 
 
-        //mojaTablica.wstawRosnaco(30);
+//        mojaTablica.wstawRosnaco(30);
 //        mojaTablica.wstawRosnaco(10);
 //        mojaTablica.wstawRosnaco(20);
 //        mojaTablica.wstawRosnaco(25);
@@ -53,7 +51,6 @@ public class Main {
 //            System.out.println("" + i + " : " + mojaTablica.get(i));
 //        }
 
-/*
         long startTime = System.nanoTime();
 
         for (int i = 0; i < 10000; i++) {
@@ -63,13 +60,6 @@ public class Main {
         long stopTime = System.nanoTime();
 
         double elapsedTime = (stopTime - startTime) / 1000000;
-        System.out.println(elapsedTime);*/
+        System.out.println(elapsedTime);
     }
-//        for (int i = 0; i < mojaTablica.getSize(); ++i) {
-//            System.out.println("" + i + " : " + mojaTablica.get(i));
-//        }
-
-
-
-
 }
