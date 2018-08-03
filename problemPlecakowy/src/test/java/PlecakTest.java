@@ -27,14 +27,14 @@ public class PlecakTest {
         ArrayList<Rzecz> listaRzeczy = new ArrayList<>();
         listaRzeczy.add(new Rzecz(4, 7));
         listaRzeczy.add(new Rzecz(5, 4));
-        listaRzeczy.add(new Rzecz(10, 15));
+        listaRzeczy.add(new Rzecz(10, 14));
         listaRzeczy.add(new Rzecz(2, 2));
         listaRzeczy.add(new Rzecz(3, 6));
         listaRzeczy.add(new Rzecz(11, 10));
 
         Plecak plecak = new Plecak(listaRzeczy);
 
-        assertEquals(17,plecak.wybierzElementy(12));
+        assertEquals(16,plecak.wybierzElementy(12));
     }
 
     @Test
@@ -42,13 +42,29 @@ public class PlecakTest {
         ArrayList<Rzecz> listaRzeczy = new ArrayList<>();
         listaRzeczy.add(new Rzecz(4, 7));
         listaRzeczy.add(new Rzecz(5, 4));
-        listaRzeczy.add(new Rzecz(10, 15));
+        listaRzeczy.add(new Rzecz(10, 14));
         listaRzeczy.add(new Rzecz(2, 2));
         listaRzeczy.add(new Rzecz(3, 6));
         listaRzeczy.add(new Rzecz(11, 10));
 
         Plecak plecak = new Plecak(listaRzeczy);
 
-        assertEquals(15,plecak.wybierzElementyRatio(12));
+        assertEquals(15,plecak.sumaWartosci(12));
+    }
+
+
+    @Test
+    public void testWybierzElementyBrute() {
+        ArrayList<Rzecz> listaRzeczy = new ArrayList<>();
+        listaRzeczy.add(new Rzecz(4, 7));
+        listaRzeczy.add(new Rzecz(5, 4));
+        listaRzeczy.add(new Rzecz(10, 14));
+        listaRzeczy.add(new Rzecz(2, 2));
+        listaRzeczy.add(new Rzecz(3, 6));
+        listaRzeczy.add(new Rzecz(11, 10));
+
+        Plecak plecak = new Plecak(listaRzeczy);
+
+        assertEquals(17,plecak.wybierzElementyBruteForce(12));
     }
 }
